@@ -48,6 +48,6 @@ exit
 ```bash
 docker rm ubuntu
 ```
-12. This marks the end of 2nd exercise. By now you should have some understading how containers are run, what is the difference between interactive and detached mode, how to name containers and how to remove them. Next exercise will focus on data persitency.
+12. This marks the end of 2nd exercise. By now you should have some understading how containers are run, what is the difference between interactive and detached mode, how to name containers and how to remove them. Next exercise will focus on data persitency and exposing container.
 
 
