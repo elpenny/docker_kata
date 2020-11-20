@@ -8,3 +8,6 @@ All of the exercises are for Windows 10 with WSL 2 enabled. We are using Linux c
 ## Exercise 1 - Hello docker
 ## Exercise 2 - Linux container
 ## Exercise 3 - Data persistence
+## Exercise 4 - Dockerfiles
+## Exercise 5 - Dockerfiles v2
+## Exercise 6 - Docker-compose
