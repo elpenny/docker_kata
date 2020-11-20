@@ -10,13 +10,13 @@ docker run -d ubuntu bash
 ```
 3. Docker will start by checking if it has requested image already downloaded. Probably not so it will pull image (each layer is downloaded and validated separately to speed up process) from DockerHub and only after that it will create container from it. DockerHub is free image registry
 4. By now we know our first Docker command: `run`. It is used to actually take image and create container from it. `-d` switch tells Docker to run container in 'detached' mode. Because our container has no job to do, it will exit immediately.
-5. To see that something actually happend type 
+5. To see that something actually happened type 
 ```bash
 docker ps -a
 ``` 
 6. `docker ps` shows all running containers, while `-a` switch tells docker to show all containers in the host, regardless of their state. Output should show us at least one ubuntu container with 'Exited' status.
 Additionally we can see what was default command for that container: ```bash```.
-7. Let's remove container, we can do this by typing `docker rm {containerName || containerID}`. Docker will give meaningfull names to your containers that can be observed by `docker ps` command. Container Ids are also visible on that command.
+7. Let's remove container, we can do this by typing `docker rm {containerName || containerID}`. Docker will give meaningful names to your containers that can be observed by `docker ps` command. Container Ids are also visible on that command.
 8. Therer is also a way to delete all stopped containers. This will not remove any running container!
 ```bash
 docker rm $(docker ps -a -q)
@@ -48,6 +48,6 @@ exit
 ```bash
 docker rm ubuntu
 ```
-12. This marks the end of 2nd exercise. By now you should have some understading how containers are run, what is the difference between interactive and detached mode, how to name containers and how to remove them. Next exercise will focus on data persitency and exposing container.
+12. This marks the end of 2nd exercise. By now you should have some understanding how containers are run, what is the difference between interactive and detached mode, how to name containers and how to remove them. Next exercise will focus on data persistency and exposing container.
 
 

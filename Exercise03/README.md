@@ -18,9 +18,9 @@ docker run --rm -d -p 8080:80 --name web nginx:1.19.4-alpine
 ```bash
 docker stop web
 ```
-* This also removed containerr as it was sopecified in run command
+* This also removed container as it was specified in run command
 
-4. Running web server without any installation is nice but how to put our content in it? Answwer is: by using mounted volumes. This is special feature that lets Docker mount directory from host onto container. 
+4. Running web server without any installation is nice but how to put our content in it? Answer is: by using mounted volumes. This is special feature that lets Docker mount directory from host onto container. 
 Make sure you are in Exercise3 directory in host terminal and run this command:
 ```bash
 docker run --rm -d -p 8080:80 --name web -v $pwd/site-content:/usr/share/nginx/html nginx:1.19.4-alpine
@@ -29,7 +29,7 @@ docker run --rm -d -p 8080:80 --name web -v $pwd/site-content:/usr/share/nginx/h
 
 5. Go again to `localhost:8080` to see changed index.html.
 6. Now edit index.html inside site-content folder and refresh webpage in browser, you should see your changes.
-7. This is cool, isn't it? In that way you can persist changes in container. Just start it with mounted folder and you are good to go. For example, if you want to use some database container, you will need to mount some folder from host onto write location for db in container, that way everytime you recreate container it will have all previous changes to db files.
+7. This is cool, isn't it? In that way you can persist changes in container. Just start it with mounted folder and you are good to go. For example, if you want to use some database container, you will need to mount some folder from host onto write location for db in container, that way every time you recreate container it will have all previous changes to db files.
 8. Before we stop and remove web container there are two more thing we can do. Let's connect to container running in detached mode and see content of index.html from inside!
 9. Run command:
 ```bash
