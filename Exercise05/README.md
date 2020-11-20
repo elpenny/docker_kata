@@ -59,7 +59,7 @@ docker build -t my-nodejs-app .
 
 12. After docker daemon built image we can run ne container from it, type into console:
 ```bash
-docker run -d --name my-running-app -p 3040:3000 my-nodejs-app
+docker run -d --name my-running-app -e NODE_ENV=production -p 3040:3000 my-nodejs-app
 ```
 
 13. Go to ```localhost:3040``` to see that app is working! This concludes Exercise 5.
