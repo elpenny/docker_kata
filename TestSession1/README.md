@@ -9,9 +9,8 @@
 
 
 ## Aim of session
-Your goals for this session are the simple:
+Your goals for this session are simple:
 1. Understand application enough to perform next step.
 2. Dockerize it.
-3. Create docker-compose stack with this app and persist its data.
 
 Simple as that, no explanation given and off you go!
